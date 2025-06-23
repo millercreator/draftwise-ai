@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-BoldItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-BoldItalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Black.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Black.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-BlackItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-BlackItalic.woff") format("woff");
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-LightItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Bold.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Heavy.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Medium.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-MediumItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-MediumItalic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Light.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Regular.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-RegularItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-RegularItalic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-SemiBoldItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-SemiBoldItalic.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-Thin.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-ThinItalic.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-ThinItalic.woff") format("woff");
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "New Kansas";
+	src: url("../assets/fonts/NewKansas-SemiBold.woff2") format("woff2"),
+		url("../assets/fonts/NewKansas-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
