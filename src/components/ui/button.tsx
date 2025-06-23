@@ -92,32 +92,32 @@ const Button = React.forwardRef<
         className={cn(buttonVariants({ variant, effect, size, className }))}
         ref={ref}
         {...props}
-        data-oid="g6z91r:"
+        data-oid="fw0ps9v"
       >
         {Icon &&
           iconPlacement === "left" &&
           (effect === "expandIcon" ? (
             <div
               className="w-0 translate-x-[0%] pr-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-100 group-hover:pr-2 group-hover:opacity-100"
-              data-oid="_-c9pse"
+              data-oid="duznlbl"
             >
-              <Icon data-oid="_mwa7g:" />
+              <Icon data-oid="ywh6o_b" />
             </div>
           ) : (
-            <Icon data-oid="aunkgq3" />
+            <Icon data-oid="3tm6xbu" />
           ))}
-        <Slottable data-oid="j_ibp.s">{props.children}</Slottable>
+        <Slottable data-oid="l0vtnc6">{props.children}</Slottable>
         {Icon &&
           iconPlacement === "right" &&
           (effect === "expandIcon" ? (
             <div
               className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-2 group-hover:opacity-100"
-              data-oid="xe_vq9-"
+              data-oid="ph7gz4h"
             >
-              <Icon data-oid="x87b67z" />
+              <Icon data-oid="869vd:3" />
             </div>
           ) : (
-            <Icon data-oid="4ifov1_" />
+            <Icon data-oid="hbwcm-q" />
           ))}
       </Comp>
     );

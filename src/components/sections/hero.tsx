@@ -1,88 +1,100 @@
+import { Button } from "../ui/button";
+
 export function Hero() {
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12" data-oid="ydu18le">
+    <section className="overflow-hidden" data-oid="pgf5_gn">
       <div
-        className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center"
-        data-oid="5wv71oa"
+        className="max-w-7xl mx-auto px-6 py-12 relative container"
+        data-oid="lr6fz7u"
       >
-        {/* Left Image */}
-        <div className="lg:col-span-1" data-oid="sfu7mal">
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          data-oid=".i.orao"
+        >
+          {/* Center Content (now left-aligned on tablet/desktop) */}
           <div
-            className="relative aspect-[4/3] rounded-lg overflow-hidden"
-            data-oid="zk99r4e"
+            className="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8"
+            data-oid="ojo_z0q"
           >
-            <img
-              src="/placeholder.svg?height=400&width=500"
-              alt="Couple using laptop together"
-              width={500}
-              height={400}
-              className="object-cover w-full h-full"
-              style={{ display: "block" }}
-              data-oid="4m10120"
-            />
-          </div>
-        </div>
-
-        {/* Center Content */}
-        <div className="lg:col-span-1 text-center space-y-8" data-oid="-cw3pg:">
-          {/* Art Illustration */}
-          <div className="flex justify-center mb-8" data-oid=".z7xyv."></div>
-
-          <div className="space-y-6" data-oid="e0j17kh">
-            <h1
-              className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight"
-              data-oid="z7s106w"
-            >
-              Powerful banking,
-              <br data-oid="qk3h7k6" />
-              for the ambitious
-            </h1>
-
-            <Button
-              className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 text-lg rounded-md"
-              data-oid="i_33rr5"
-            >
-              Join the waitlist
-            </Button>
-
-            <p
-              className="text-gray-600 text-lg leading-relaxed max-w-md mx-auto"
-              data-oid="36x9:49"
-            >
-              Open a business account in minutes, from your phone.
-              <br data-oid="z7gwa_q" />
-              Without going to the bank. Your all-in-one account, with all
-              <br data-oid="bj-g41q" />
-              essentials - No hidden fees.
-            </p>
-          </div>
-        </div>
-
-        {/* Right Mobile Mockup */}
-        <div className="lg:col-span-1 flex justify-center" data-oid="4cww862">
-          <div className="relative" data-oid="s:ua2fa">
+            {/* Art Illustration */}
             <div
-              className="w-80 h-96 bg-gray-900 rounded-3xl p-2"
-              data-oid="za.f0yq"
+              className="flex justify-center lg:justify-start mb-8"
+              data-oid="muebfkk"
+            ></div>
+
+            <div className="space-y-6" data-oid="tu4iq.u">
+              <h1
+                className="nk-bold text-4xl lg:text-5xl text-gray-800 leading-tight"
+                data-oid="powct5o"
+              >
+                The AI-Powered Legal Document Assistant Built for Speed,
+                Accuracy, and Your Firm’s Unique Style
+              </h1>
+              <p
+                className="font-body text-lg text-gray-700 max-w-xl mx-auto lg:mx-0"
+                style={{ marginTop: "1rem" }}
+                data-oid=".e.71z_"
+              >
+                Empower your legal team to draft complex contracts in minutes,
+                review with confidence, and accelerate deal cycles—using AI
+                trained on real legal precedent and your firm’s templates.
+              </p>
+              <Button data-oid="g_snmsj">Join the waitlist</Button>
+            </div>
+          </div>
+        </div>
+        {/* Right Mobile Mockup - absolutely positioned and larger */}
+        <div
+          className="lg:fixed lg:bottom-0 lg:right-0 z-10 flex justify-end pointer-events-none lg:w-[100vw] lg:h-[100vh]"
+          data-oid="nq9pdhy"
+        >
+          <div
+            className="relative flex items-end justify-end w-full h-full"
+            data-oid="tf5konw"
+          >
+            <div
+              className="w-[420px] h-[700px] bg-gray-900 rounded-3xl p-2 hidden lg:block"
+              style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.25)" }}
+              data-oid="5l5zct0"
             >
               <div
                 className="w-full h-full bg-white rounded-2xl overflow-hidden"
-                data-oid="c18k_8."
+                data-oid="ltf:p.o"
               >
                 <img
-                  src="/placeholder.svg?height=384&width=320"
+                  src="/placeholder.svg?height=672&width=384"
                   alt="Mobile app interface showing marketplace"
-                  width={320}
-                  height={384}
+                  width={384}
+                  height={672}
                   className="object-cover w-full h-full"
                   style={{ display: "block" }}
-                  data-oid="r5yey76"
+                  data-oid="98on3hv"
+                />
+              </div>
+            </div>
+            {/* Show a smaller version on mobile/tablet, not fixed */}
+            <div
+              className="w-[320px] h-[540px] bg-gray-900 rounded-3xl p-2 block lg:hidden mx-auto mt-12 relative pointer-events-auto"
+              data-oid="m4y8u3g"
+            >
+              <div
+                className="w-full h-full bg-white rounded-2xl overflow-hidden"
+                data-oid=".-vfbr1"
+              >
+                <img
+                  src="/placeholder.svg?height=512&width=288"
+                  alt="Mobile app interface showing marketplace"
+                  width={288}
+                  height={512}
+                  className="object-cover w-full h-full"
+                  style={{ display: "block" }}
+                  data-oid="l:ci:il"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
