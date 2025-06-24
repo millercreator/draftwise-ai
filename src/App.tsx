@@ -6,6 +6,7 @@ import { CaseStudy } from "./components/sections/case-study";
 import { Testimonials } from "./components/sections/testimonials";
 import { Compliance } from "./components/sections/compliance";
 import { IntegrationShowcase } from "./components/sections/integration-showcase";
+import { Footer } from "./components/sections/footer";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       {/* <CaseStudy data-oid="6zfu50s" /> */}
       <Testimonials data-oid="hjlhi:m" />
       <Compliance data-oid="vy8t5c7" />
-      {/* Add more sections as needed */}
+      <Footer />
     </>
   );
 }

@@ -41,9 +41,9 @@ const badges = [
 
 export function Compliance() {
 	return (
-		<section className="px-6">
+		<section className="px-6 pb-16">
 			<div
-				className="py-10 px-2 flex max-w-6xl justify-center items-center min-h-[400px] rounded-2xl shadow-md border mx-auto"
+				className="py-10 px-2 flex max-w-6xl justify-center items-center min-h-[400px] rounded-2xl border mx-auto"
 				data-oid="myq33w1"
 			>
 				<div
@@ -65,9 +65,9 @@ export function Compliance() {
 							className="text-base text-muted-foreground max-w-xl mb-6"
 							data-oid="k3k_0r-"
 						>
-							No one takes security more seriously than Draftwise AI. That's why we work
-							hard to achieve and maintain the highest security standards in the
-							industry.
+							No one takes security more seriously than Draftwise AI. That's why
+							we work hard to achieve and maintain the highest security
+							standards in the industry.
 						</p>
 						<Button className="w-fit" data-oid="d2-66pp">
 							Join our waitlist
