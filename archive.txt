@@ -1,0 +1,15 @@
+		<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-4">
+								<h2
+									className="text-xl md:text-2xl nk-bold text-gray-900"
+									data-oid="s._5qw3"
+								>
+									Measure returns effortlessly
+								</h2>
+								<Badge
+									variant="secondary"
+									className="bg-green-100 text-green-700 border-green-200 w-fit"
+									data-oid="b4n7g.a"
+								>
+									Coming Soon
+								</Badge>
+							</div>
