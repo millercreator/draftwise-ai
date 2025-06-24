@@ -16,7 +16,7 @@ export function Hero() {
             className="space-y-4 text-center sm:text-start "
           >
             <h1
-              className="nk-bold text-4xl lg:text-5xl text-gray-800 leading-tight sm:max-w-md lg:max-w-xl mx-auto sm:mx-0"
+              className="nk-bold text-4xl lg:text-5xl leading-tight sm:max-w-md lg:max-w-xl mx-auto sm:mx-0"
               data-oid="02u7.zy"
             >
               AI-Powered Legal Drafting for Your Firm
@@ -39,7 +39,7 @@ export function Hero() {
       >
         <div
           data-oid="_idoj::"
-          className="aspect-square bg-red-500 rounded-xl sm:max-w-5xl relative sm:top-90 w-full sm:left-6/12 lg:left-4/12 xl:left-2/12 2xl:left-1/12 h-[400px] border-8 border-black"
+          className="aspect-square rounded-xl sm:max-w-5xl relative sm:top-90 w-full sm:left-6/12 lg:left-4/12 xl:left-2/12 2xl:left-1/12 h-[400px] border-8 border-black"
         ></div>{" "}
       </div>
     </section>
