@@ -10,14 +10,14 @@ import { IntegrationShowcase } from "./components/sections/integration-showcase"
 function App() {
   return (
     <>
-      <Hero data-oid="rhyqb2l" />
-      <IntegrationShowcase data-oid="9gan_7e" />
-      <ValuePropositionStrip data-oid="pu:e6di" />
-      <ProductFeatures data-oid="-923u3b" />
+      <Hero data-oid="a6ryif1" />
+      <IntegrationShowcase data-oid="w5-k0i5" />
+      <ValuePropositionStrip data-oid="_r8n-af" />
+      <ProductFeatures data-oid="evgsg3k" />
       {/* <TargetAudience data-oid="lk6ts6-" /> */}
-      <CaseStudy data-oid="293yu72" />
-      <Testimonials data-oid="f0re0au" />
-      <Compliance data-oid="ajvzb85" />
+      <CaseStudy data-oid="6zfu50s" />
+      <Testimonials data-oid="hjlhi:m" />
+      <Compliance data-oid="vy8t5c7" />
       {/* Add more sections as needed */}
     </>
   );

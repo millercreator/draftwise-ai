@@ -92,32 +92,25 @@ const Button = React.forwardRef<
         className={cn(buttonVariants({ variant, effect, size, className }))}
         ref={ref}
         {...props}
-        data-oid="af8f5dr"
       >
         {Icon &&
           iconPlacement === "left" &&
           (effect === "expandIcon" ? (
-            <div
-              className="w-0 translate-x-[0%] pr-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-100 group-hover:pr-2 group-hover:opacity-100"
-              data-oid="jjpyj_m"
-            >
-              <Icon data-oid="7:5ikcv" />
+            <div className="w-0 translate-x-[0%] pr-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-100 group-hover:pr-2 group-hover:opacity-100">
+              <Icon />
             </div>
           ) : (
-            <Icon data-oid="1h26e3l" />
+            <Icon />
           ))}
-        <Slottable data-oid="i3at1z9">{props.children}</Slottable>
+        <Slottable>{props.children}</Slottable>
         {Icon &&
           iconPlacement === "right" &&
           (effect === "expandIcon" ? (
-            <div
-              className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-2 group-hover:opacity-100"
-              data-oid=".ldbfw-"
-            >
-              <Icon data-oid=".hc9ae0" />
+            <div className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-2 group-hover:opacity-100">
+              <Icon />
             </div>
           ) : (
-            <Icon data-oid="5n5l5fe" />
+            <Icon />
           ))}
       </Comp>
     );
