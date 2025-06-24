@@ -41,41 +41,41 @@ export function ValuePropositionStrip() {
   ];
 
   return (
-    <section className="p-8 md:p-16" data-oid="3jyk40k">
-      <div className="container" data-oid="mmdapg2">
-        <div className="flex items-center gap-4 mb-16" data-oid=".qat2ty">
-          <h1 className="text-4xl nk-bold" data-oid="6jj91yb">
+    <section className="p-8 md:p-16" data-oid="4fy77_:">
+      <div className="container" data-oid="_mj7pbd">
+        <div className="flex items-center gap-4 mb-16" data-oid="7ftr0eb">
+          <h1 className="text-4xl nk-bold" data-oid="bd-20y2">
             Our values
           </h1>
-          <div className="w-2 h-2 rounded-full" data-oid="monbyux"></div>
+          <div className="w-2 h-2 rounded-full" data-oid="jndw3jb"></div>
         </div>
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16"
-          data-oid="mf3er.s"
+          data-oid="yyyiyjw"
         >
           {values.map((value, index) => {
             const IconComponent = value.icon;
             return (
-              <div key={index} className="space-y-6" data-oid="75pcy2x">
+              <div key={index} className="space-y-6" data-oid="i4ud8x.">
                 <div
                   className="w-16 h-16 rounded-full border border-white/30 flex items-center justify-center"
-                  data-oid="ydu1kq."
+                  data-oid="2awqrbh"
                 >
                   <IconComponent
                     className="w-8 h-8"
                     strokeWidth={1}
-                    data-oid="ek:7il4"
+                    data-oid="h8n_xg_"
                   />
                 </div>
-                <div className="space-y-4" data-oid="38o.8ua">
+                <div className="space-y-4" data-oid="nn7r93k">
                   <h3
                     className="text-xl md:text-2xl nk-semibold"
-                    data-oid="efnp_0q"
+                    data-oid="krny6g6"
                   >
                     {value.title}
                   </h3>
-                  <p className="text-gray-400 text-base" data-oid="yqy1q9.">
+                  <p className="text-gray-400 text-base" data-oid="vw5c9rs">
                     {value.description}
                   </p>
                 </div>
