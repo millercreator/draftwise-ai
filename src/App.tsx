@@ -15,7 +15,7 @@ function App() {
       <ValuePropositionStrip data-oid="_r8n-af" />
       <ProductFeatures data-oid="evgsg3k" />
       {/* <TargetAudience data-oid="lk6ts6-" /> */}
-      <CaseStudy data-oid="6zfu50s" />
+      {/* <CaseStudy data-oid="6zfu50s" /> */}
       <Testimonials data-oid="hjlhi:m" />
       <Compliance data-oid="vy8t5c7" />
       {/* Add more sections as needed */}

@@ -17,7 +17,7 @@ function BentoCard(props: {
 			{...rest}
 		>
 			<div className="space-y-4 p-2">
-				<h2 className={`text-2xl nk-bold ${titleClassName ?? ""}`}>{title}</h2>
+				<h2 className={`text-2xl nk-semibold ${titleClassName ?? ""}`}>{title}</h2>
 				{description && (
 					<p className="text-muted-foreground max-w-md text-sm ">
 						{description}
@@ -75,7 +75,7 @@ export function ProductFeatures() {
 				{/* Main Heading */}
 				<div className="text-center mb-16" data-oid="7bztr3y">
 					<h1
-						className="text-3xl sm:text-4xl nk-bold max-w-lg mx-auto"
+						className="text-2xl sm:text-3xl nk-bold max-w-lg mx-auto"
 						data-oid="rf_nwel"
 					>
 						Everything You Need to Draft & Review Legal Docs

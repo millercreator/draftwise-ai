@@ -1,73 +1,126 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	type CarouselApi,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import * as React from "react";
+
+const testimonials = [
+	{
+		quote: "It’s a game-changer for legal teams, enabling them to draft and review contracts with unprecedented speed and accuracy.",
+		name: "John Roche",
+		title: "Startups and VC Partnerships at Intercom",
+		avatar: {
+			src: "https://i.pravatar.cc/200?img=3",
+			alt: "John Roche",
+			fallback: "JR",
+		},
+	},
+	{
+		quote: "Draftwise has transformed the way our team collaborates on contracts. The efficiency gains are remarkable!",
+		name: "Jane Smith",
+		title: "General Counsel at Capsule",
+		avatar: {
+			src: "https://i.pravatar.cc/200?img=3",
+			alt: "Jane Smith",
+			fallback: "JS",
+		},
+	},
+	{
+		quote: "The AI-powered suggestions are spot on and save us hours every week.",
+		name: "Alex Kim",
+		title: "Legal Operations at Chromatools",
+		avatar: {
+			src: "https://i.pravatar.cc/200?img=4",
+			alt: "Alex Kim",
+			fallback: "AK",
+		},
+	}
+];
 
 export function Testimonials() {
-  return (
-    <div
-      className="max-w-4xl mx-auto px-6 py-16 text-center"
-      data-oid="jnz.4mt"
-    >
-      {/* Intercom Logo */}
-      <div
-        className="flex items-center justify-center mb-12"
-        data-oid="2cbwz8y"
-      >
-        <div className="flex items-center gap-3" data-oid="tniip79">
-          <div
-            className="w-8 h-8 bg-black rounded-sm flex items-center justify-center"
-            data-oid="fc--h3a"
-          >
-            <div
-              className="w-5 h-5 bg-white rounded-sm flex items-center justify-center"
-              data-oid="7h-i9tf"
-            >
-              <div
-                className="w-3 h-3 bg-black rounded-sm"
-                data-oid="9nrtchd"
-              ></div>
-            </div>
-          </div>
-          <span
-            className="text-xl font-semibold tracking-wide"
-            data-oid=":m849h3"
-          >
-            INTERCOM
-          </span>
-        </div>
-      </div>
+	const [api, setApi] = React.useState<CarouselApi>();
 
-      {/* Testimonial Quote */}
-      <blockquote
-        className="text-3xl md:text-4xl lg:text-5xl leading-tight font-serif text-gray-900 mb-12 max-w-5xl mx-auto"
-        data-oid="x1l5bei"
-      >
-        {
-          "\"Partnering with creators through Passionfroot has been a game-changer for Intercom's Startup program. By collaborating with top newsletters, we've reached thousands of founders.\""
-        }
-      </blockquote>
+	const handlePrev = () => {
+		if (api) api.scrollPrev();
+	};
+	const handleNext = () => {
+		if (api) api.scrollNext();
+	};
 
-      {/* Profile Section */}
-      <div
-        className="flex items-center justify-center gap-4"
-        data-oid=":-4a-00"
-      >
-        <Avatar className="w-12 h-12" data-oid="5mcezm6">
-          <AvatarImage
-            src="/placeholder.svg?height=48&width=48"
-            alt="John Roche"
-            data-oid="f.avx5_"
-          />
-
-          <AvatarFallback data-oid="71tt.qb">JR</AvatarFallback>
-        </Avatar>
-        <div className="text-left" data-oid="7f-f4th">
-          <div className="font-semibold text-gray-900" data-oid="6wdaki5">
-            John Roche
-          </div>
-          <div className="text-gray-600 text-sm" data-oid="t28cy7a">
-            Startups and VC Partnerships at Intercom
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div
+			className="max-w-6xl mx-auto px-6 py-20 text-center"
+			data-oid="jnz.4mt"
+		>
+			<Carousel
+				className="w-full"
+				opts={{ loop: true }}
+				plugins={[
+					Autoplay({ delay: 5000 }),
+				]}
+				setApi={setApi}
+			>
+				<CarouselContent>
+					{testimonials.map((t, i) => (
+						<CarouselItem key={i}>
+							<div className="mb-16 flex flex-col items-center justify-center">
+								{/* Testimonial Quote */}
+								<blockquote
+									className="nk-medium text-3xl md:text-4xl mb-12 max-w-3xl mx-auto"
+									data-oid="x1l5bei"
+								>
+									{`"${t.quote}"`}
+								</blockquote>
+								{/* Profile Section */}
+								<div
+									className="flex items-center justify-center gap-4"
+									data-oid=":-4a-00"
+								>
+									<Avatar className="size-10" data-oid="5mcezm6">
+										<AvatarImage
+											src={t.avatar.src}
+											alt={t.avatar.alt}
+											data-oid="f.avx5_"
+										/>
+										<AvatarFallback data-oid="71tt.qb">
+											{t.avatar.fallback}
+										</AvatarFallback>
+									</Avatar>
+									<div className="text-left font-body" data-oid="7f-f4th">
+										<div className="font-semibold text-sm" data-oid="6wdaki5">
+											{t.name}
+										</div>
+										<div className="text-muted-foreground text-sm" data-oid="t28cy7a">
+											{t.title}
+										</div>
+									</div>
+								</div>
+							</div>
+						</CarouselItem>
+					))}
+				</CarouselContent>
+			</Carousel>
+			<div className="flex justify-center items-center gap-4 mt-6">
+				<button
+					onClick={handlePrev}
+					className="inline-flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition h-10 w-10"
+					aria-label="Previous testimonial"
+				>
+					<ChevronLeft className="w-6 h-6" />
+				</button>
+				<button
+					onClick={handleNext}
+					className="inline-flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition h-10 w-10"
+					aria-label="Next testimonial"
+				>
+					<ChevronRight className="w-6 h-6" />
+				</button>
+			</div>
+		</div>
+	);
 }
