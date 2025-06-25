@@ -17,7 +17,7 @@ function BentoCard(props: {
 			{...rest}
 		>
 			<div className="space-y-4 p-2">
-				<h2 className={`text-2xl nk-semibold ${titleClassName ?? ""}`}>{title}</h2>
+				<h2 className={`text-2xl nk-semibold text-secondary/60 ${titleClassName ?? ""}`}>{title}</h2>
 				{description && (
 					<p className="text-muted-foreground max-w-md text-sm ">
 						{description}
@@ -38,9 +38,28 @@ const features = [
 			"lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-2 min-h-[400px] h-full",
 		image: (
 			<div
-				className="flex-1 relative mb-2 bg-gray-200 rounded-lg p-1 overflow-hidden min-h-[200px] sm:min-h-[300px] h-full w-full flex items-center justify-center"
+				className="flex-1 relative mb-2 rounded-lg p-1 overflow-hidden min-h-[200px] sm:min-h-[300px] h-full w-full flex items-center justify-center"
 				data-oid="dx-bm_i"
-			></div>
+				style={{
+					background: `linear-gradient(135deg, var(--primary, #3b82f6) 0%, var(--secondary, #f59e42) 80%)`,
+				}}
+			>
+				<img
+					src="/images/product/document-drafting.jpeg"
+					alt="Document Drafting"
+					style={{
+						position: "absolute",
+						left: 100,
+						top: 80,
+						width: "100%",
+						height: "100%",
+						borderRadius: "0.5rem",
+						objectFit: "cover",
+						objectPosition: "top left",
+						transform: "scale(1.2)",
+					}}
+				/>
+			</div>
 		),
 	},
 	{
@@ -50,7 +69,29 @@ const features = [
 		className:
 			"lg:row-start-1 lg:row-end-2 lg:col-start-2 lg:col-end-3 min-h-[350px] h-full",
 		image: (
-			<div className="flex-1 relative bg-gray-200 rounded-lg mb-2 overflow-hidden min-h-[150px] sm:min-h-[200px] h-full w-full flex items-center justify-center"></div>
+			<div
+				className="flex-1 relative mb-2 rounded-lg p-1 overflow-hidden min-h-[200px] sm:min-h-[300px] h-full w-full flex items-center justify-center"
+				data-oid="dx-bm_i"
+				style={{
+					background: `linear-gradient(135deg, var(--primary, #3b82f6) 0%, var(--secondary, #f59e42) 80%)`,
+				}}
+			>
+				<img
+					src="/images/product/saas-document-review.jpeg"
+					alt="Document Drafting"
+					style={{
+						position: "absolute",
+						left: 100,
+						top: 80,
+						width: "100%",
+						height: "100%",
+						borderRadius: "0.5rem",
+						objectFit: "cover",
+						objectPosition: "top left",
+						transform: "scale(1.2)",
+					}}
+				/>
+			</div>
 		),
 	},
 	{
@@ -61,16 +102,35 @@ const features = [
 			"lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-3 sm:col-span-2 flex-col sm:flex-row gap-6 sm:gap-8 min-h-[300px] h-full",
 		image: (
 			<div
-				className="relative bg-gray-200 rounded-lg p-1 overflow-hidden min-h-[200px] sm:min-h-[250px] h-full w-full flex items-center justify-center max-w-sm md:ml-auto"
-				data-oid="2qxcxuj"
-			></div>
+				className="flex-1 relative mb-2 rounded-lg p-1 overflow-hidden min-h-[200px] sm:min-h-[300px] h-full w-full flex items-center justify-center"
+				data-oid="dx-bm_i"
+				style={{
+					background: `linear-gradient(135deg, var(--primary, #3b82f6) 0%, var(--secondary, #f59e42) 80%)`,
+				}}
+			>
+				<img
+					src="/images/product/saas-document-clauses.jpeg"
+					alt="Document Drafting"
+					style={{
+						position: "absolute",
+						left: 100,
+						top: 80,
+						width: "100%",
+						height: "100%",
+						borderRadius: "0.5rem",
+						objectFit: "cover",
+						objectPosition: "top left",
+						transform: "scale(1.2)",
+					}}
+				/>
+			</div>
 		),
 	},
 ];
 
 export function ProductFeatures() {
 	return (
-		<section className="bg-gray-50 py-16 px-4" data-oid="ps_ach7">
+		<section className="bg-accent py-16 px-4" data-oid="ps_ach7">
 			<div className="max-w-6xl mx-auto" data-oid="qegzkry">
 				{/* Main Heading */}
 				<div className="text-center mb-16" data-oid="7bztr3y">

@@ -54,7 +54,7 @@ function BrandLogoImg({
 
 export function IntegrationShowcase() {
   return (
-    <div className="bg-neutral-50 py-8 px-4" data-oid="lkmf585">
+    <div className="border-y border-border py-8 px-4" data-oid="lkmf585">
       <div
         className="max-w-6xl mx-auto text-center space-y-2"
         data-oid=":-vbywo"
@@ -79,13 +79,13 @@ export function IntegrationShowcase() {
           </Marquee>
           {/* Left blur */}
           <div
-            className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-neutral-50 via-neutral-50/80 to-transparent z-10"
+            className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-background via-background/80 to-transparent z-10"
             data-oid="mtkjl3:"
           />
 
           {/* Right blur */}
           <div
-            className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-neutral-50 via-neutral-50/80 to-transparent z-10"
+            className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-background via-background/80 to-transparent z-10"
             data-oid="dv62wml"
           />
         </div>

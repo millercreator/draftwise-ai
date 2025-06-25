@@ -63,7 +63,7 @@ export function ValuePropositionStrip() {
 							<img
 								src={value.icon}
 								alt={value.title}
-								className="w-16 h-16 rounded-full border border-white/30"
+								className="w-16 h-16 rounded-full"
 								data-oid="icon-image"
 							/>
 							{/* Title and description */}
@@ -74,7 +74,10 @@ export function ValuePropositionStrip() {
 								>
 									{value.title}
 								</h3>
-								<p className="text-muted-foreground max-w-sm" data-oid="si0ah3f">
+								<p
+									className="text-muted-foreground max-w-sm"
+									data-oid="si0ah3f"
+								>
 									{value.description}
 								</p>
 							</div>

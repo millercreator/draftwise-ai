@@ -29,37 +29,18 @@ const legalLinks = ["Privacy", "Cookies", "Terms", "Website terms"];
 
 export function Footer() {
 	return (
-		<footer className="bg-black text-white pt-16 pb-8 text-sm">
+		<footer className="bg-secondary text-white pt-16 pb-8 text-sm">
 			<div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-4 md:px-12">
 				{/* Logo */}
 				<div className="min-w-[200px] md:mr-8 mb-8 md:mb-0 flex-shrink-0">
-					<div className="flex items-center mb-8 md:mb-8">
-						<svg
-							width="40"
-							height="32"
-							viewBox="0 0 40 32"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M7.5 16.5L18.5 3.5C19.5 2.5 21 2.5 22 3.5L33 16.5"
-								stroke="#2FE6A6"
-								strokeWidth="4"
-								strokeLinecap="round"
-							/>
-							<rect
-								x="0.5"
-								y="19.5"
-								width="39"
-								height="12"
-								rx="6"
-								fill="#2FE6A6"
-							/>
-						</svg>
-						<span className="font-bold ml-3 tracking-[0.5px] text-sm">
-							Plain
-						</span>
-					</div>
+					<a href="/" className="flex items-center gap-2">
+						<img
+							src="/images/brand-logos/luminous-white.svg"
+							alt="Lumious Logo"
+							className="h-8 w-auto"
+							style={{ minWidth: 32 }}
+						/>
+					</a>
 				</div>
 				{/* Columns */}
 				<div className="w-full flex flex-col sm:flex-row flex-wrap gap-8">
@@ -70,7 +51,7 @@ export function Footer() {
 								i === 0 ? "sm:mr-12" : ""
 							}`}
 						>
-							<div className="text-muted-foreground tracking-[1.5px] mb-4 font-medium text-sm">
+							<div className="text-white mb-4 font-medium text-sm">
 								{col.heading}
 							</div>
 							<ul className="list-none p-0 m-0">
@@ -96,7 +77,7 @@ export function Footer() {
 				))}
 			</div>
 			{/* Copyright */}
-			<div className="max-w-7xl mx-auto mt-4 px-4 md:px-12 text-muted-foreground text-sm">
+			<div className="max-w-7xl mx-auto mt-4 px-4 md:px-12 text-white/50  text-sm">
 				© 2025 Draftwise AI. All rights reserved.
 			</div>
 		</footer>

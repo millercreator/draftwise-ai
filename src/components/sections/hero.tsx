@@ -30,7 +30,7 @@ export function Hero() {
               trained on real legal precedent and your firm’s templates.
             </p>
           </div>
-          <Button data-oid="43rry3k">Join the waitlist</Button>
+          <Button data-oid="43rry3k" className="rounded-full">Join the waitlist</Button>
         </div>
       </div>
       <div
@@ -42,8 +42,8 @@ export function Hero() {
           data-oid="o9lbeo0"
         >
           <img
-            className="w-full h-full object-cover"
-            src="/images/product/cover.png"
+            className="w-full h-full object-top object-cover"
+            src="/images/product/saas-dashboard.jpeg"
             data-oid="chlt3n8"
           />
         </div>{" "}

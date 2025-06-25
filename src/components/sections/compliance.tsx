@@ -69,7 +69,7 @@ export function Compliance() {
 							we work hard to achieve and maintain the highest security
 							standards in the industry.
 						</p>
-						<Button className="w-fit" data-oid="d2-66pp">
+						<Button className="w-fit rounded-full" data-oid="d2-66pp">
 							Join our waitlist
 						</Button>
 					</div>
