@@ -67,7 +67,7 @@ export function Compliance() {
 							className="text-base text-muted-foreground max-w-xl mb-6"
 							data-oid="k3k_0r-"
 						>
-							No one takes security more seriously than Draftwise AI. That's why
+							No one takes security more seriously than Luminious AI. That's why
 							we work hard to achieve and maintain the highest security
 							standards in the industry.
 						</p>

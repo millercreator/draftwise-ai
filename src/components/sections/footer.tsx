@@ -78,7 +78,7 @@ export function Footer() {
 			</div>
 			{/* Copyright */}
 			<div className="max-w-7xl mx-auto mt-4 px-4 md:px-12 text-white/50  text-sm">
-				© 2025 Draftwise AI. All rights reserved.
+				© 2025 Luminious AI. All rights reserved.
 			</div>
 		</footer>
 	);

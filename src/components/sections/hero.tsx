@@ -6,23 +6,39 @@ export function Hero() {
       className="overflow-hidden relative w-full sm:h-[700px]"
       data-oid="xy1z3pc"
     >
-      <div className="w-full sm:absolute sm:h-full z-10" data-oid="ci:hspd">
+      {/* Swirl background behind image, not covering text/button */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute z-0 right-0 top-0 h-full w-[80vw] sm:w-[55vw] flex items-center"
+        style={{
+          opacity: 0.5,
+          WebkitMaskImage: 'url("data:image/svg+xml;utf8,<svg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 600 700\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M600,0 Q400,350 600,700 Q300,600 0,700 Q200,350 0,0 Q300,100 600,0 Z\' fill=\'black\'/></svg>")',
+          maskImage: 'url("data:image/svg+xml;utf8,<svg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 600 700\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M600,0 Q400,350 600,700 Q300,600 0,700 Q200,350 0,0 Q300,100 600,0 Z\' fill=\'black\'/></svg>")',
+          WebkitMaskRepeat: 'no-repeat',
+          maskRepeat: 'no-repeat',
+          WebkitMaskSize: 'cover',
+          maskSize: 'cover',
+        }}
+      >
+        <div className="w-full h-full bg-primary opacity-90" />
+      </div>
+      <div className="w-full sm:absolute sm:h-full z-100 pt-[100px] sm:pt-0" data-oid="ci:hspd">
         <div
           className="flex flex-col items-center sm:items-start justify-center sm:justify-start sm:pt-30 h-full max-w-7xl mx-auto px-6 py-12 gap-y-10"
           data-oid="xcdo68m"
         >
           <div
-            className="space-y-4 text-center sm:text-start "
+            className="space-y-4 text-center sm:text-start relative"
             data-oid="ooeyafg"
           >
             <h1
-              className="nk-bold text-4xl lg:text-5xl leading-tight sm:max-w-md lg:max-w-xl mx-auto sm:mx-0"
+              className="nk-bold text-4xl lg:text-5xl leading-tight sm:max-w-md lg:max-w-xl mx-auto sm:mx-0 relative"
               data-oid="-7rps9y"
             >
               AI-Powered Legal Drafting for Your Firm
             </h1>
             <p
-              className="font-body text-base lg:text-lg max-w-xl mx-auto sm:mx-0 text-muted-foreground"
+              className="font-body text-base lg:text-lg max-w-xl mx-auto sm:mx-0 text-muted-foreground relative"
               data-oid="pq4rlom"
             >
               Empower your legal team to draft complex contracts in minutes,
@@ -30,7 +46,7 @@ export function Hero() {
               trained on real legal precedent and your firm’s templates.
             </p>
           </div>
-          <Button data-oid="43rry3k" className="rounded-full">Join the waitlist</Button>
+          <Button data-oid="43rry3k" className="rounded-full relative">Join the waitlist</Button>
         </div>
       </div>
       <div

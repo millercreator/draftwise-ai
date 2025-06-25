@@ -43,7 +43,7 @@ export function ValuePropositionStrip() {
 						className="text-2xl sm:text-3xl max-w-sm nk-bold"
 						data-oid="mrli6o4"
 					>
-						What can Draftwise AI do for your legal team?
+						What can Luminious AI do for your legal team?
 					</h1>
 					<p
 						className="text-muted-foreground max-w-md text-base md:ml-auto md:self-start"
