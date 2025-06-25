@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import React from "react";
 
 // Reusable CaseStudyCard component
 export function CaseStudyCard({
