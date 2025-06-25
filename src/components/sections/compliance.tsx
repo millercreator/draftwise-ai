@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedGridPattern } from "../magicui/animated-grid-pattern";
+import { cn } from "@/lib/utils";
 
 const badges = [
 	{
@@ -41,9 +43,9 @@ const badges = [
 
 export function Compliance() {
 	return (
-		<section className="px-6 pb-16">
+		<section className="px-6 pb-16 relative">
 			<div
-				className="py-10 px-2 flex max-w-6xl justify-center items-center min-h-[400px] rounded-2xl border mx-auto"
+				className="relative z-100 bg-background py-10 px-2 flex max-w-6xl justify-center items-center min-h-[400px] rounded-2xl border mx-auto"
 				data-oid="myq33w1"
 			>
 				<div
@@ -90,6 +92,16 @@ export function Compliance() {
 					</div>
 				</div>
 			</div>
+			<AnimatedGridPattern
+				numSquares={50}
+				maxOpacity={0.1}
+				duration={3}
+				repeatDelay={1}
+				className={cn(
+					"*:[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]",
+					"inset-x-0 inset-y-[-15%] h-[100%] skew-y-8"
+				)}
+			/>
 		</section>
 	);
 }
